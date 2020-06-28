@@ -1,6 +1,62 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo h1 {
+  font-size: 1.7rem;
+}
+
+.header .logo p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #63687e;
+}
+
+.header .mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .mode p {
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: #aeb3cb;
+  font-weight: bold;
+}
+
+.header .mode .toggle {
+  width: 3.6rem;
+  height: 1.8rem;
+  background-color: #aeb3cb;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .mode .toggle .ball {
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  top: 3px;
+  right: 3px;
+}
+
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -10,5 +66,8 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 /*# sourceMappingURL=style.css.map */

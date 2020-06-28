@@ -1,6 +1,10 @@
+//Imports
+@import "variables";
+@import "header";
+
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,4 +13,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
