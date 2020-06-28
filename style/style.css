@@ -7,6 +7,12 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    display: block;
+  }
+}
+
 .header .logo h1 {
   font-size: 1.5rem;
 }
@@ -25,6 +31,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header .mode {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #c1c1c1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .header .mode p {
@@ -56,12 +73,26 @@
 
 .mainCards {
   margin-top: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1120px) {
+  .mainCards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .mainCards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .mainCards .card1,
@@ -198,7 +229,22 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 1rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1120px) {
+  .smallCards .cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .smallCards .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .smallCards .cards .card1,
@@ -346,6 +392,6 @@ body {
   font-size: 14px;
   max-width: 70rem;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 /*# sourceMappingURL=style.css.map */

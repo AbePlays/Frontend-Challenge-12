@@ -9,7 +9,17 @@
   .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1rem;
+    justify-items: center;
+
+    @media screen and (max-width: 1120px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 570px) {
+      grid-template-columns: 1fr;
+    }
+
     .card1,
     .card2,
     .card3,
