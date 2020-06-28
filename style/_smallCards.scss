@@ -1,0 +1,94 @@
+.smallCards {
+  margin-top: 3rem;
+  h1 {
+    font-size: 1.7rem;
+    color: $darkGrayishBlue;
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8 {
+      border-radius: 0.5rem;
+      padding: 2rem 1rem;
+      width: 16rem;
+      height: 8rem;
+      background-color: $lightGrayishBlue;
+
+      &--header {
+        display: flex;
+        justify-content: space-between;
+        color: $facebook;
+
+        p {
+          color: $darkGrayishBlue;
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+      }
+
+      &--footer {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $limeGreen;
+
+        h1 {
+          color: black;
+        }
+
+        &--ticker {
+          display: flex;
+          align-items: center;
+
+          p {
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-left: 0.2rem;
+          }
+        }
+      }
+    }
+
+    .card2 {
+      &--footer {
+        color: $brightRed;
+      }
+    }
+
+    .card3,
+    .card4 {
+      &--header {
+        color: hsl(329, 70%, 58%);
+      }
+    }
+
+    .card5,
+    .card6 {
+      &--header {
+        color: $twitter;
+      }
+    }
+
+    .card7,
+    .card8 {
+      &--header {
+        color: $youTube;
+      }
+
+      &--footer {
+        color: $brightRed;
+      }
+    }
+  }
+}
