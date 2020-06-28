@@ -4,12 +4,12 @@
 
   .logo {
     h1 {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
     p {
       margin-top: 0.5rem;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: $darkGrayishBlue;
     }
   }
@@ -18,23 +18,23 @@
     display: flex;
     align-items: center;
     p {
-      font-size: 1rem;
+      font-size: 0.8rem;
       margin-right: 1rem;
       color: $lightToggle;
       font-weight: bold;
     }
 
     .toggle {
-      width: 3.6rem;
-      height: 1.8rem;
+      width: 3.4rem;
+      height: 1.6rem;
       background-color: $lightToggle;
       border-radius: 1rem;
       position: relative;
       cursor: pointer;
 
       .ball {
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 1.2rem;
+        width: 1.2rem;
         background-color: #fff;
         border-radius: 50%;
         position: absolute;

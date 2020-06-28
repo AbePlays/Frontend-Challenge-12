@@ -1,5 +1,5 @@
 .smallCards {
-  margin-top: 3rem;
+  margin-top: 2rem;
   h1 {
     font-size: 1.7rem;
     color: $darkGrayishBlue;
@@ -21,7 +21,7 @@
       border-radius: 0.5rem;
       padding: 2rem 1rem;
       width: 16rem;
-      height: 8rem;
+      height: 9rem;
       background-color: $lightGrayishBlue;
 
       &--header {
@@ -37,7 +37,7 @@
       }
 
       &--footer {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -45,6 +45,7 @@
 
         h1 {
           color: black;
+          font-size: 2rem;
         }
 
         &--ticker {
