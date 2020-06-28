@@ -1,0 +1,100 @@
+.mainCards {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    background-color: $lightGrayishBlue;
+    width: 16rem;
+    height: 15rem;
+    text-align: center;
+
+    &--top {
+      height: 0.2rem;
+      background-color: $facebook;
+    }
+
+    &--title {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $facebook;
+
+      p {
+        color: $darkGrayishBlue;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-left: 0.5rem;
+      }
+    }
+
+    h1 {
+      margin-top: 2rem;
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 0.7rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      color: $darkGrayishBlue;
+    }
+
+    &--ticker {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $limeGreen;
+
+      p {
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .card2 {
+    &--top {
+      background-color: $twitter;
+    }
+
+    &--title {
+      color: $twitter;
+    }
+  }
+
+  .card3 {
+    &--top {
+      background: linear-gradient(
+        to right,
+        hsl(37, 97%, 70%),
+        hsl(329, 70%, 58%)
+      );
+    }
+
+    &--title {
+      color: hsl(329, 70%, 58%);
+    }
+  }
+
+  .card4 {
+    &--top {
+      background-color: $youTube;
+    }
+
+    &--title {
+      color: $youTube;
+    }
+
+    &--ticker {
+      color: $brightRed;
+    }
+  }
+}
